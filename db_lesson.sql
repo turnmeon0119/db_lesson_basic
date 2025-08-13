@@ -1,4 +1,5 @@
-/* DB Lesson課題のクエリ集です。
+/* DB Lesson
+
 Q1
 USE db_lesson;
 CREATE TABLE departments (
@@ -110,3 +111,13 @@ SELECT
     ->   departments ON people.department_id = departments.department_id
     -> JOIN
     ->   reports ON people.person_id = reports.person_id;
+Q11 
+ SELECT
+    ->   people.name
+    -> FROM
+    ->   people
+    -> LEFT JOIN
+    ->   reports ON people.person_id = reports.person_id
+    -> WHERE
+    ->   reports.person_id IS NULL;
+
