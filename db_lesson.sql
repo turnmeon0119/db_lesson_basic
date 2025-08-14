@@ -111,6 +111,7 @@ SELECT
     ->   departments ON people.department_id = departments.department_id
     -> JOIN
     ->   reports ON people.person_id = reports.person_id;
+    
 Q11 
  SELECT
     ->   people.name
